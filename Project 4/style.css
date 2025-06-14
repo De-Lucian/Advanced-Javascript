@@ -1,0 +1,151 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;   
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.date-guest-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.date-picker, .guest-selector {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+}
+
+.date-picker input, .guest-selector select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.filter-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.hotel-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hotel-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.hotel-info {
+    padding: 15px;
+}
+
+.hotel-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.hotel-address {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.hotel-price {
+    font-weight: bold;
+    color: #4CAF50;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.hotel-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.feature {
+    font-size: 0.8em;
+    background-color: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.book-btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.book-btn:hover {
+    background-color: #45a049;
+}

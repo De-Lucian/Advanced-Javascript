@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="container animated fadeIn" style="background: linear-gradient(to bottom right, #ffffff, #f8f9fa); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-top: 2rem;">
+        <h1> Hotel Booking</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for hotels...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="date-guest-container">
+            <div class="date-picker">
+                <label for="checkInDate">Check-in:</label>
+                <input type="date" id="checkInDate">
+            </div>
+            <div class="date-picker">
+                <label for="checkOutDate">Check-out:</label>
+                <input type="date" id="checkOutDate">
+            </div>
+            <div class="guest-selector">
+                <label for="guestCount">Guests:</label>
+                <select id="guestCount">
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5+ Guests</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="filter-container">
+            <label>
+                <input type="checkbox" id="wifiFilter"> Free WiFi
+            </label>
+            <label>
+                <input type="checkbox" id="breakfastFilter"> Free Breakfast
+            </label>
+            <label>
+                <input type="checkbox" id="poolFilter"> Swimming Pool
+            </label>
+        </div>
+        <div id="results" class="results-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
